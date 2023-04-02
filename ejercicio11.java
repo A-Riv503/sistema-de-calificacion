@@ -25,11 +25,11 @@ public class ejercicio11 {
         -9 y 10 "sobresaliente"
         
         muestre por pantalla, alumno, nota, resultado en palabras*/
-        
+        final int tamanio=15;
         Scanner lector=new Scanner(System.in);
-        double[] notas=new double[10];
-        String[] alumno=new String[10];
-        String[] resultado=new String[10];
+        double[] notas=new double[tamanio];
+        String[] alumno=new String[tamanio];
+        String[] resultado=new String[notas.length];
         
         
         for(int i=0; i<notas.length; i++){
@@ -59,7 +59,7 @@ public class ejercicio11 {
         }
         
         for(int i=0; i<notas.length; i++){
-           System.out.println("alumno: "+alumno[i]+ "nota: "+notas[i]+ " : "+resultado[i]);
+           System.out.println("alumno: "+alumno[i]+ " nota: "+notas[i]+ " : "+resultado[i]);
         }
     }
     
